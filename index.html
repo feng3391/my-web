@@ -4,16 +4,66 @@
     <meta charset="UTF-8">
     <title>傻逼李祥</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             text-align: center;
-            margin-top: 100px;
-            font-family: "微软雅黑";
+            min-height: 100vh;
+            padding-top: 100px;
+            font-family: "微软雅黑", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        button {
+            font-size: 20px;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 50px;
+            background-color: #fff;
+            color: #667eea;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3 ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background-color: #f0f0f0;
+        }
+        #myImage {
+            display: none;
+            width: 300px;
+            margin-top: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
         }
     </style>
 </head>
 <body>
-    <h1>你好，小傻李祥！</h1>
-    <p>这是一个简介李祥是傻逼的网页</p >
-    <button onclick="alert('李祥傻逼的一生')">点我试试</button>
+    <h1>你好，小李祥!</h1>
+    <p>这是一个关于滕州导管王的网页</p >
+    <button onclick="showImage()">点我看李祥</button>
+    
+    <img id="myImage" src="photo.jpg" alt="示例图片">
+
+    <script>
+        function showImage() {
+            document.getElementById("myImage").style.display = "block";
+        }
+    </script>
 </body>
 </html>
